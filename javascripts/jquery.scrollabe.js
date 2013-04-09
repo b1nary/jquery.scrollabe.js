@@ -19,7 +19,7 @@
 	var	pluginName = 'scrollabe',
 		defaults = {
 			speed: 1000,
-			easing: 'easeInOutQuad',
+			easing: 'swing',
 			listenLink: 'a[href^="#"]'
 		};
 
