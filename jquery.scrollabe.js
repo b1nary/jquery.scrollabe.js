@@ -1,8 +1,7 @@
 /*
- * (sexy) jQuery plugin for scrolling to anchor on click or page load
+ * (sexy) anchor scrolling for clicks and page loads
  * Original author: Roman Pramberger @talkb1nary
- *
- * Version: 0.1 
+ * 
  * Licensed under the WTFPL license
  *
  * Example usage:
