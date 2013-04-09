@@ -40,7 +40,7 @@
 			var offs = $(window.location.hash).offset();
 			if(offs != undefined){
 				$(this.element).animate({
-					'scrollTop':   offs.top
+					'scrollTop': offs.top
 				}, this.options.speed, this.options.easing);
 			}
 		}
@@ -56,12 +56,10 @@
 		if(this.options.listenLink != null){
 			var that = this;
 			$(this.options.listenLink).on('click', function(e){
-				e.preventDefault();
-				
 				$(that.element).animate({
-					'scrollTop':   $($(this).attr('href')).offset().top
+					scrollTop: $($(e.target).attr('href')).offset().top
 				}, that.options.speed, that.options.easing);
-				window.location.hash = $(this).attr('href');
+
 				return false;
 			});
 		}

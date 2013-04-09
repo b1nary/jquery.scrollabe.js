@@ -22,9 +22,11 @@
         <a href="https://github.com/b1nary/jquery.scrollabe.js" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
-	<a href="#bottom">Bottom</a> | <a href="#anchor-something">Something</a> | <a href="#anchor-welcome">Welcome</a>
 	
 	<center>
+		<br /><br />
+		<a href="#bottom">Bottom</a> | <a href="#anchor-something">Something</a> | <a href="#anchor-welcome">Welcome</a>
+	
 		<div id="anchor-welcome" style="margin-top:1800px; margin-bottom:340px;"></div>
 		<h1 class="demo">Welcome to the Scroll abe demo</h1>
 		<a href="#bottom">Bottom</a> | <a href="#top">Top</a> | <a href="#anchor-something">Something</a>
@@ -32,17 +34,20 @@
 		<div id="anchor-something" style="margin-top:1800px; margin-bottom:340px;"></div>
 		<h1 class="demo" style="font-size:100px;">Its something</h1>
 		<a href="#bottom">Bottom</a> | <a href="#top">Top</a> | <a href="#anchor-welcome">Welcome</a>
+	
+		<div id="bottom" style="margin-top:1200px;"></div>
+		<a href="#top">Top</a> | <a href="#anchor-something">Something</a> | <a href="#anchor-welcome">Welcome</a>
+		<br /><br />
 	</center>
 	
-	<div id="bottom" style="margin-top:1200px;"></div>
-	<a href="#top">Top</a> | <a href="#anchor-something">Something</a> | <a href="#anchor-welcome">Welcome</a>
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="javascripts/jquery.scrollabe.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			window.location.hash = "#anchor-welcome"
-			$('html, body').scrollabe({ speed: 2000 });
+			window.setTimeout(function(){
+				$('html, body').scrollabe({ speed: 1400, listenLink: 'a[href^="#"]' });
+			}, 1000);
 		});
 	</script>
 	<script>
