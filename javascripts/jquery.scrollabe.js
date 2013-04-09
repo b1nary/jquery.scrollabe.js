@@ -56,6 +56,8 @@
 		if(this.options.listenLink != null){
 			var that = this;
 			$(this.options.listenLink).on('click', function(e){
+				e.preventDefault();
+				
 				$(that.element).animate({
 					scrollTop: $($(e.target).attr('href')).offset().top
 				}, that.options.speed, that.options.easing);
