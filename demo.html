@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header id="top">
+    <header id="top" style="position:fixed; top:0; left:0; right:0;">
       <div class="inner">
         <h1>jQuery.scrollabe.js</h1>
         <h2>jQuery plugin for anchor scrolling for clicks and page loads</h2>
@@ -24,9 +24,12 @@
     </header>
 	
 	<center>
-		<h1 class="demo" id="anchor-welcome" style="margin-top:1800px;">Welcome to the Scroll abe demo</h1>
+		<div id="anchor-welcome" style="margin-top:1800px; margin-bottom:340px;"></div>
+		<h1 class="demo" style="">Welcome to the Scroll abe demo</h1>
 		<a href="#bottom">Bottom</a> | <a href="#top">Top</a> | <a href="#anchor-something">Something</a>
-		<h1 class="demo" id="anchor-something" style="margin-top:3000px; font-size:100px;">Its something</h1>
+		
+		<div id="anchor-something" style="margin-top:1800px; margin-bottom:340px;"></div>
+		<h1 class="demo" style="font-size:100px;">Its something</h1>
 		<a href="#bottom">Bottom</a> | <a href="#top">Top</a> | <a href="#anchor-welcome">Welcome</a>
 	</center>
 	
